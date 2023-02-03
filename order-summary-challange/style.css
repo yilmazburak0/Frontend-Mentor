@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-color: hsl(225, 100%, 94%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    /* display: flex;
+    flex-direction: column; */
+    background-color: #fff;
+    width: 400px;
+    height: 570px;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.card_image img {
+    max-width: 100%;
+}
+
+.card_detail{
+    padding: 36px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.plan{
+    background-color: hsl(225, 100%, 98%);
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    width: 100%;
+
+}
+
+.icon{
+    margin-right: 12px;
+}
+
+.price_title{
+    font-weight: 900;
+}
+
+.change-button{
+    margin-left: auto;
+}
+
+.plan{
+    margin: 16px 0px;
+}
+
+.btn {
+    border: 0;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+}
+
+.primary-button{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    width: 100%;
+    box-shadow: 0 5px 10px 10px hsl(225deg 100% 98%);
+}
+
+.ghost-button {
+    color: hsl(224, 23%, 55%);
+}

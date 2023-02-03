@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    background-color: hsl(226, 43%, 10%); 
+}
+
+.main {
+    display: grid;
+    grid-template-areas:
+        "user-card work play study"
+        "user-card exercise social self";
+    grid-template-rows: 216px 216px;
+    grid-template-columns: 216px 216px 216px 216px;
+    gap: 24px;
+}
+
+.work {
+    grid-area: work;
+}
+
+.play {
+    grid-area: play;
+}
+
+.study {
+    grid-area: study;
+}
+
+.exercise {
+    grid-area: exercise;
+}
+
+.social {
+    grid-area: social;
+}
+
+.self {
+    grid-area: self;
+}
+
+.user-card {
+    grid-area: user-card;
+    color: #fff;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 16px;
+}
+
+.card-content {
+    height: 70%;
+    /* border-radius: 16px; */
+    background-color: hsl(246, 80%, 60%);
+    padding: 24px;
+    border-radius: 16px;
+}
+
+.card-times{
+    height: 30%;
+    background-color: hsl(235, 46%, 20%);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    row-gap: 12px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+
+}
+
+.card-image img {
+    width: 56px;
+    border-radius: 999px;
+    margin-bottom: 36px;
+    border: 3px solid #fff;
+}
+
+.user-title h2{
+    margin-top: 8px;
+    font-size: 32px;
+}
+
+.activity-card-body{
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-times p:nth-child(odd),.card-body-footer {
+    color: hsl(235, 45%, 61%);
+    
+}
+
+.activity-card-image{
+    height: 25%;
+    background-color: blueviolet;
+    position: relative;
+    overflow: hidden;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    
+
+}
+
+.activity-card{
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 16px;
+}
+
+.activity-card-image img{
+    position: absolute;
+    right: 24px;
+}
+
+.activity-card-body{
+    background-color: hsl(235, 46%, 20%);
+    height: 75%;
+    border-radius: 16px;
+}
+
+.activity-card-body div:nth-child(-n + 2){
+    color: #fff;
+}
+
+.card-body-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+
